@@ -1,0 +1,20 @@
+[package]
+name = "mcp-timeout-guard"
+version = "0.1.0-alpha.1"
+edition = "2024"
+rust-version = "1.85"
+description = "A local timeout proxy for newline-delimited MCP stdio JSON-RPC"
+license = "MIT"
+repository = "https://github.com/Tinkora/mcp_timeout_guard"
+homepage = "https://github.com/Tinkora/mcp_timeout_guard"
+keywords = ["mcp", "json-rpc", "timeout", "agent", "cli"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+
+[dev-dependencies]
+assert_cmd = "2.0"
